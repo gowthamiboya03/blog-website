@@ -8,6 +8,7 @@ Simple static blog demo with client-side comments and search.
 - [styles.css](styles.css) — site styles
 - [script.js](script.js) — client logic (comments, search, sharing)
 - [images/](images) — post images
+- note:while running this code in editor store all images in 'image/' folder
 
 ## Features
 - Three sample posts with images.
