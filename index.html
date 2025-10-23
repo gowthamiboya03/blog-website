@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Awesome Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#post1">Post 1: Introduction to Web Development</a></li>
+                <li><a href="#post2">Post 2: Mastering CSS</a></li>
+                <li><a href="#post3">Post 3: JavaScript Essentials</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search posts...">
+            <button onclick="searchPosts()">Search</button>
+        </div>
+    <!-- Main Content Area -->
+    <p class="intro">Welcome to My Awesome Blog — explore tutorials and articles on Web Development, CSS, and JavaScript.</p>
+    <main>
+        <!-- Blog Post 1 -->
+        <article id="post1" class="blog-post">
+            <h2>Introduction to Web Development</h2>
+            <p class="date">Published on: October 1, 2025</p>
+            <img src="images/web_img.jpg" alt="Web Development Image" class="post-image">
+            <div class="categories">
+                <span>Category: Tutorials</span> | <span>Tags: HTML, CSS, JavaScript</span>
+                <p>Web development is the process of creating websites and web applications. It involves a combination of front-end and back-end technologies. Front-end focuses on what users see and interact with, using HTML, CSS, and JavaScript. This post explores the basics to get you started.</p>
+            
+            </div>
+            <div class="comments-section">
+                <h3><b>Comments</b></h3>
+                <div id="comments-post1" class="comments-list"></div>
+                <form onsubmit="addComment(event, 'post1')">
+                    <input type="text" id="name-post1" placeholder="Your Name" required>
+                    <textarea id="message-post1" placeholder="Your Comment" required></textarea>
+                    <button type="submit">Submit Comment</button>
+                </form>
+            </div>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article id="post2" class="blog-post">
+            <h2>Mastering CSS</h2>
+            <p class="date">Published on: October 5, 2025</p>
+            <img src="images/css_img.jpg" alt="CSS Image" class="post-image">
+            <div class="categories">
+                <span>Category: Tutorials</span> | <span>Tags: CSS, Responsive Design</span>
+                <p>CSS (Cascading Style Sheets) is essential for styling web pages. It controls layout, colors, fonts, and more. In this post, we dive into advanced techniques like Flexbox and Grid to create responsive designs that look great on any device.</p>
+            </div>
+            <div class="comments-section">
+                <h3>Comments</h3>
+                <div id="comments-post2" class="comments-list"></div>
+                <form onsubmit="addComment(event, 'post2')">
+                    <input type="text" id="name-post2" placeholder="Your Name" required>
+                    <textarea id="message-post2" placeholder="Your Comment" required></textarea>
+                    <button type="submit">Submit Comment</button>
+                </form>
+            </div>
+        </article>
+
+        <!-- Blog Post 3 -->
+        <article id="post3" class="blog-post">
+            <h2>JavaScript Essentials</h2>
+            <p class="date">Published on: October 10, 2025</p>
+            <img src="images/js_img.jpg" alt="JavaScript Image" class="post-image">
+           <div class="categories">
+                <span>Category: Tutorials</span> | <span>Tags: JavaScript, Interactivity</span>
+                 <p>JavaScript brings interactivity to websites. From handling user events to manipulating the DOM, it's a powerful language. This post covers fundamentals like variables, functions, and event listeners to build dynamic web experiences.</p>
+            </div>
+            <div class="comments-section">
+                <h3>Comments</h3>
+                <div id="comments-post3" class="comments-list"></div>
+                <form onsubmit="addComment(event, 'post3')">
+                    <input type="text" id="name-post3" placeholder="Your Name" required>
+                    <textarea id="message-post3" placeholder="Your Comment" required></textarea>
+                    <button type="submit">Submit Comment</button>
+                </form>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Blog. All rights reserved.</p>
+        <div class="social-share">
+            <button onclick="shareOnTwitter()">Share on Twitter</button>
+            <button onclick="shareOnFacebook()">Share on Facebook</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
